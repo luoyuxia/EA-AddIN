@@ -1,0 +1,7 @@
+C:\Users\yuxia\source\repos\MyAddin\MyAddin-Test\bin\Release\MyAddin-Test.exe.config
+C:\Users\yuxia\source\repos\MyAddin\MyAddin-Test\bin\Release\MyAddin-Test.exe
+C:\Users\yuxia\source\repos\MyAddin\MyAddin-Test\bin\Release\MyAddin-Test.pdb
+C:\Users\yuxia\source\repos\MyAddin\MyAddin-Test\obj\Release\MyAddin-Test.csproj.CoreCompileInputs.cache
+C:\Users\yuxia\source\repos\MyAddin\MyAddin-Test\obj\Release\MyAddin-Test.exe
+C:\Users\yuxia\source\repos\MyAddin\MyAddin-Test\obj\Release\MyAddin-Test.pdb
+C:\Users\yuxia\source\repos\MyAddin\MyAddin-Test\obj\Release\MyAddin-Test.csprojAssemblyReference.cache

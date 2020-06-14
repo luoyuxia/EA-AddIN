@@ -38,6 +38,21 @@ namespace MyAddin
             return rootPackage;
         }
 
+        public XmlDocument parseXMLDoc(string key)
+        {
+            XmlDocument xmlDoc = null;
+            try
+            {
+                xmlDoc = AESHelper.decryptXML(filePath, key);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("无法读取文件，请确保秘钥是否正确！");
+                return null;
+            }
+            return xmlDoc;
+        }
+
         public void generatePackageFromXMLNode(EAPackage parentPackage, XmlNode xmlNode)
         {
             foreach(XmlNode n in xmlNode.ChildNodes)

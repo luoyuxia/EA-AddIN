@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EA;
 
 namespace MyAddin
 {
@@ -11,6 +12,7 @@ namespace MyAddin
         private string name;
         private string stereoType;
         private List<EAAttribute> attributes = new List<EAAttribute>();
+        private EA.Element element;
         private string id;
         private string realizeClassId = null;
         private List<string> measurementAxisList = new List<string>();
@@ -69,6 +71,8 @@ namespace MyAddin
         {
             get { return attributes; }
         }
+
+        public Element Element { get => element; set => element = value; }
 
         public void addAttribute(EAAttribute attribute)
         {

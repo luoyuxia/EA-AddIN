@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EA;
 
 namespace MyAddin
 {
@@ -12,6 +13,7 @@ namespace MyAddin
         private string name;
         private List<EAPackage> packages = new List<EAPackage>();
         private List<EAClass> classes = new List<EAClass>();
+        private EA.Package eaPackage;
 
         public EAPackage() { }
 
@@ -41,6 +43,8 @@ namespace MyAddin
             get { return classes; }
             set { classes = value; }
         }
+
+        public Package EaPackage { get => eaPackage; set => eaPackage = value; }
 
         public void addPackage(EAPackage package)
         {

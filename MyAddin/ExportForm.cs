@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
+using MyAddin.utils;
 
 namespace MyAddin
 {
@@ -45,7 +46,8 @@ namespace MyAddin
             EAPackage rootPackage = null;
             if(topPackage != null)
             {
-                rootPackage = new EAPackage(topPackage.Name, topPackage.Element.Stereotype);
+                rootPackage = new EAPackage(topPackage.Name, topPackage.PackageGUID);
+                rootPackage.EaPackage = topPackage;
                 initPackage(topPackage, rootPackage);
             }
             if (rootPackage == null)
@@ -63,7 +65,8 @@ namespace MyAddin
 
         private void exportToXML(EAPackage rootPackage)
         {
-            FaceFileExporter faceFileExporter = new FaceFileExporter();
+            AESHelper.isEncrpted = encrpytOption.Checked;
+            FaceFileExporter faceFileExporter = new FaceFileExporter(this.repository);
             faceFileExporter.export(rootPackage, this.faceXMLSelectDialog.FileName);
         }
 
@@ -71,29 +74,20 @@ namespace MyAddin
         {
             foreach(EA.Package p in topPackage.Packages)
             {
-                EAPackage newPackage = new EAPackage(p.Name, p.Element.Stereotype);
-                EAClass previousClass = null;
+                EAPackage newPackage = new EAPackage(p.Name, p.PackageGUID);
+                newPackage.EaPackage = p;
+
                 foreach (EA.Element element in p.Elements)
                 {
-                    EAClass eAClass = new EAClass(element.Name, element.Stereotype);
-                    if (previousClass != null)
-                    {
-                        eAClass.addAttribute(new EAAttribute(previousClass.Name, previousClass.StereoType));
-                    }
+                    EAClass eAClass = new EAClass(element.Name, element.ElementGUID);
+                    eAClass.Element = element;
                     foreach (EA.Attribute attribute in element.Attributes)
-                    {
-                        EAAttribute eAAttribute = new EAAttribute(attribute.Name, attribute.Stereotype);
+                    { 
+                        EAAttribute eAAttribute = new EAAttribute(attribute.Name, attribute.AttributeGUID);
+                        eAAttribute.Attribute = attribute;
                         eAClass.addAttribute(eAAttribute);
                     }
-                    if(faceTypeEnumTool.isChildrenElemnt(element.Stereotype))
-                    {
-                        previousClass = eAClass;
-                    }
-                    else
-                    {
-                        newPackage.addClass(eAClass);
-                        previousClass = null;
-                    } 
+                    newPackage.addClass(eAClass);
                 }
                 rootPackage.addPackage(newPackage);
                 initPackage(p, newPackage);
@@ -105,13 +99,7 @@ namespace MyAddin
             EA.Package rootPackage = null;
             foreach(EA.Package p in this.repository.Models)
             {
-                foreach(EA.Package p1 in p.Packages)
-                {
-                    foreach(EA.Package p2 in p1.Packages)
-                    {
-                        rootPackage = p2;
-                    }
-                }
+                rootPackage = p;
             }
             return rootPackage;
         }

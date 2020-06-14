@@ -40,9 +40,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 18);
+            this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Face项目路径";
+            this.label1.Text = "项目路径";
             // 
             // facePathTextbox
             // 
@@ -89,7 +89,7 @@
             this.Controls.Add(this.facePathTextbox);
             this.Controls.Add(this.label1);
             this.Name = "NewFaceForm";
-            this.Text = "新建Face项目";
+            this.Text = "新建项目";
             this.Load += new System.EventHandler(this.NewFaceForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

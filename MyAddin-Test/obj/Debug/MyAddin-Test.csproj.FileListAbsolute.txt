@@ -11,4 +11,3 @@ E:\交大软院实验室材料\EA-AddIN\MyAddin-Test\bin\Debug\MyAddin-Test.pdb
 E:\交大软院实验室材料\EA-AddIN\MyAddin-Test\obj\Debug\MyAddin-Test.csproj.CoreCompileInputs.cache
 E:\交大软院实验室材料\EA-AddIN\MyAddin-Test\obj\Debug\MyAddin-Test.exe
 E:\交大软院实验室材料\EA-AddIN\MyAddin-Test\obj\Debug\MyAddin-Test.pdb
-E:\交大软院实验室材料\EA-AddIN\MyAddin-Test\obj\Debug\MyAddin-Test.csprojAssemblyReference.cache

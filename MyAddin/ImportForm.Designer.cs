@@ -32,7 +32,7 @@
             this.eaProjectFileInput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.selectXMLFile = new System.Windows.Forms.TextBox();
-            this.faceXMLSelectDialog = new System.Windows.Forms.OpenFileDialog();
+            this.XMLSelectDialog = new System.Windows.Forms.OpenFileDialog();
             this.selectFileButton = new System.Windows.Forms.Button();
             this.importModelButton = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -42,6 +42,7 @@
             this.selectNewProjectFIleDialog = new System.Windows.Forms.OpenFileDialog();
             this.keytext = new System.Windows.Forms.TextBox();
             this.key = new System.Windows.Forms.Label();
+            this.decrypt_checkbox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -67,9 +68,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 18);
+            this.label2.Size = new System.Drawing.Size(89, 18);
             this.label2.TabIndex = 2;
-            this.label2.Text = "face XML File:";
+            this.label2.Text = "XMI File:";
             // 
             // selectXMLFile
             // 
@@ -80,10 +81,10 @@
             this.selectXMLFile.Size = new System.Drawing.Size(864, 28);
             this.selectXMLFile.TabIndex = 3;
             // 
-            // faceXMLSelectDialog
+            // XMLSelectDialog
             // 
-            this.faceXMLSelectDialog.Filter = "FACE Data Model Files|*.face";
-            this.faceXMLSelectDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.faceXMLSelectDialog_FileOk);
+            this.XMLSelectDialog.Filter = "Files|*.xml";
+            this.XMLSelectDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.faceXMLSelectDialog_FileOk);
             // 
             // selectFileButton
             // 
@@ -102,7 +103,7 @@
             this.importModelButton.Name = "importModelButton";
             this.importModelButton.Size = new System.Drawing.Size(954, 41);
             this.importModelButton.TabIndex = 5;
-            this.importModelButton.Text = "Import FACE Model Data XML";
+            this.importModelButton.Text = "Import XMI";
             this.importModelButton.UseVisualStyleBackColor = true;
             this.importModelButton.Click += new System.EventHandler(this.importModelButton_Click);
             // 
@@ -166,11 +167,24 @@
             this.key.Text = "密码";
             this.key.Click += new System.EventHandler(this.label4_Click);
             // 
+            // decrypt_checkbox
+            // 
+            this.decrypt_checkbox.AutoSize = true;
+            this.decrypt_checkbox.Location = new System.Drawing.Point(882, 227);
+            this.decrypt_checkbox.Name = "decrypt_checkbox";
+            this.decrypt_checkbox.Size = new System.Drawing.Size(70, 22);
+            this.decrypt_checkbox.TabIndex = 12;
+            this.decrypt_checkbox.Text = "解密";
+            this.decrypt_checkbox.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.decrypt_checkbox.UseVisualStyleBackColor = true;
+            this.decrypt_checkbox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // ImportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 544);
+            this.Controls.Add(this.decrypt_checkbox);
             this.Controls.Add(this.key);
             this.Controls.Add(this.keytext);
             this.Controls.Add(this.selectNewProjectFile);
@@ -197,7 +211,7 @@
         private System.Windows.Forms.TextBox eaProjectFileInput;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox selectXMLFile;
-        private System.Windows.Forms.OpenFileDialog faceXMLSelectDialog;
+        private System.Windows.Forms.OpenFileDialog XMLSelectDialog;
         private System.Windows.Forms.Button selectFileButton;
         private System.Windows.Forms.Button importModelButton;
         private System.Windows.Forms.RichTextBox richTextBox1;
@@ -207,5 +221,6 @@
         private System.Windows.Forms.OpenFileDialog selectNewProjectFIleDialog;
         private System.Windows.Forms.TextBox keytext;
         private System.Windows.Forms.Label key;
+        private System.Windows.Forms.CheckBox decrypt_checkbox;
     }
 }

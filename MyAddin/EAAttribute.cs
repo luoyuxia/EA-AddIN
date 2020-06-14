@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EA;
 
 namespace MyAddin
 {
     class EAAttribute
     {
         private string name;
+        private EA.Attribute attribute;
 
         private string type;
 
         private bool isEAClass = false;
+        private EAAttributeValue lowerValue;
+        private EAAttributeValue upperValue;
+        private string attributeType;
 
         private string id;
 
@@ -39,6 +44,11 @@ namespace MyAddin
             get { return id; }
             set { id = value; }
         }
+
+        public EAAttributeValue UpperValue { get => upperValue; set => upperValue = value; }
+        public EAAttributeValue LowerValue { get => lowerValue; set => lowerValue = value; }
+        public string AttributeType { get => attributeType; set => attributeType = value; }
+        public EA.Attribute Attribute { get => attribute; set => attribute = value; }
 
         public EAAttribute() { }
 

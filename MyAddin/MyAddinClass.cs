@@ -11,11 +11,11 @@ namespace MyAddin
     public class MyAddinClass
     {
         // define menu constants
-        const string menuHeader = "-&Face插件";
+        const string menuHeader = "-&UPF3插件";
         const string menuImport = "&导入";
         const string menuExport = "&导出";
         const string menuOpen = "&打开项目";
-        const string menuNewFace = "&新建Face项目";
+        const string menuNewFace = "&新建项目";
      
         ///
         /// Called Before EA starts to check Add-In Exists

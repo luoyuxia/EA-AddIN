@@ -42,7 +42,7 @@
       <HintPath>..\packages\Cryptorgaphy.0.0.6\lib\Cryptography.dll</HintPath>
     </Reference>
     <Reference Include="Interop.EA">
-      <HintPath>C:\Program Files (x86)\Sparx Systems\EA\Interop.EA.dll</HintPath>
+      <HintPath>C:\Users\yuxia\Desktop\Interop.EA.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
@@ -65,6 +65,7 @@
     <Compile Include="concept\Observable.cs" />
     <Compile Include="concept\View.cs" />
     <Compile Include="EAAttribute.cs" />
+    <Compile Include="EAAttributeValue.cs" />
     <Compile Include="EAClass.cs" />
     <Compile Include="EADirection.cs" />
     <Compile Include="EAPackage.cs" />

@@ -36,6 +36,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.exportModelButton = new System.Windows.Forms.Button();
             this.selectFileButton = new System.Windows.Forms.Button();
+            this.encrpytOption = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // selectXMLFile
@@ -52,9 +53,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 18);
+            this.label2.Size = new System.Drawing.Size(170, 18);
             this.label2.TabIndex = 9;
-            this.label2.Text = "FACE XML File:";
+            this.label2.Text = "XMI格式的模型文件:";
             // 
             // eaProjectFileInput
             // 
@@ -79,7 +80,7 @@
             this.faceXMLSelectDialog.CheckFileExists = false;
             this.faceXMLSelectDialog.CheckPathExists = false;
             this.faceXMLSelectDialog.DefaultExt = "face";
-            this.faceXMLSelectDialog.Filter = "FACE Data Model Files|*.face";
+            this.faceXMLSelectDialog.Filter = "Files|*.xml";
             this.faceXMLSelectDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.faceXMLSelectDialog_FileOk);
             // 
             // richTextBox1
@@ -95,9 +96,9 @@
             this.exportModelButton.Enabled = false;
             this.exportModelButton.Location = new System.Drawing.Point(12, 159);
             this.exportModelButton.Name = "exportModelButton";
-            this.exportModelButton.Size = new System.Drawing.Size(954, 41);
+            this.exportModelButton.Size = new System.Drawing.Size(864, 32);
             this.exportModelButton.TabIndex = 12;
-            this.exportModelButton.Text = "Export FACE Model Data XML";
+            this.exportModelButton.Text = "Export to XMI";
             this.exportModelButton.UseVisualStyleBackColor = true;
             this.exportModelButton.Click += new System.EventHandler(this.exportModelButton_Click);
             // 
@@ -111,11 +112,22 @@
             this.selectFileButton.UseVisualStyleBackColor = true;
             this.selectFileButton.Click += new System.EventHandler(this.selectFileButton_Click);
             // 
+            // encrpytOption
+            // 
+            this.encrpytOption.AutoSize = true;
+            this.encrpytOption.Location = new System.Drawing.Point(882, 165);
+            this.encrpytOption.Name = "encrpytOption";
+            this.encrpytOption.Size = new System.Drawing.Size(70, 22);
+            this.encrpytOption.TabIndex = 14;
+            this.encrpytOption.Text = "加密";
+            this.encrpytOption.UseVisualStyleBackColor = true;
+            // 
             // ExportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 544);
+            this.Controls.Add(this.encrpytOption);
             this.Controls.Add(this.selectXMLFile);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.eaProjectFileInput);
@@ -140,5 +152,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button exportModelButton;
         private System.Windows.Forms.Button selectFileButton;
+        private System.Windows.Forms.CheckBox encrpytOption;
     }
 }

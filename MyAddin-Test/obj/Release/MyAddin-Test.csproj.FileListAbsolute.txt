@@ -5,3 +5,9 @@ C:\Users\yuxia\source\repos\MyAddin\MyAddin-Test\obj\Release\MyAddin-Test.csproj
 C:\Users\yuxia\source\repos\MyAddin\MyAddin-Test\obj\Release\MyAddin-Test.exe
 C:\Users\yuxia\source\repos\MyAddin\MyAddin-Test\obj\Release\MyAddin-Test.pdb
 C:\Users\yuxia\source\repos\MyAddin\MyAddin-Test\obj\Release\MyAddin-Test.csprojAssemblyReference.cache
+E:\交大软院实验室材料\EA-AddIN\MyAddin-Test\bin\Release\MyAddin-Test.exe.config
+E:\交大软院实验室材料\EA-AddIN\MyAddin-Test\bin\Release\MyAddin-Test.exe
+E:\交大软院实验室材料\EA-AddIN\MyAddin-Test\bin\Release\MyAddin-Test.pdb
+E:\交大软院实验室材料\EA-AddIN\MyAddin-Test\obj\Release\MyAddin-Test.csproj.CoreCompileInputs.cache
+E:\交大软院实验室材料\EA-AddIN\MyAddin-Test\obj\Release\MyAddin-Test.exe
+E:\交大软院实验室材料\EA-AddIN\MyAddin-Test\obj\Release\MyAddin-Test.pdb

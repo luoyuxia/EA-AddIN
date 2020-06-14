@@ -20,10 +20,10 @@ E:\交大软院实验室材料\EA-AddIN\MyAddin\bin\Debug\Cryptography.dll
 E:\交大软院实验室材料\EA-AddIN\MyAddin\obj\Debug\MyAddin.csproj.ResolveComReference.cache
 E:\交大软院实验室材料\EA-AddIN\MyAddin\obj\Debug\MyAddin.ImportForm.resources
 E:\交大软院实验室材料\EA-AddIN\MyAddin\obj\Debug\MyAddin.ExportForm.resources
+E:\交大软院实验室材料\EA-AddIN\MyAddin\obj\Debug\MyAddin.NewFaceForm.resources
 E:\交大软院实验室材料\EA-AddIN\MyAddin\obj\Debug\MyAddin.OpenEAPForm.resources
 E:\交大软院实验室材料\EA-AddIN\MyAddin\obj\Debug\MyAddin.csproj.GenerateResource.cache
 E:\交大软院实验室材料\EA-AddIN\MyAddin\obj\Debug\MyAddin.csproj.CoreCompileInputs.cache
 E:\交大软院实验室材料\EA-AddIN\MyAddin\obj\Debug\MyAddin.csproj.CopyComplete
 E:\交大软院实验室材料\EA-AddIN\MyAddin\obj\Debug\MyAddin.dll
 E:\交大软院实验室材料\EA-AddIN\MyAddin\obj\Debug\MyAddin.pdb
-E:\交大软院实验室材料\EA-AddIN\MyAddin\obj\Debug\MyAddin.NewFaceForm.resources
